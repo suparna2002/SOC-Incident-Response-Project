@@ -1,38 +1,49 @@
 # SOC Incident Response Simulation Project
 
 ## Objective
-To simulate how a Security Operations Center (SOC) responds to a detected security incident.
+To simulate real-world incident response actions after detecting a security incident.
+
+## Tools Used
+- Splunk Enterprise
 
 ## Scenario
-Multiple failed login attempts were detected from IP address 192.168.1.10, followed by a successful login.
+A brute force attack was detected from IP address 192.168.1.10, where multiple failed login attempts were followed by a successful login.
 
 ## Incident Identification
 - Repeated failed login attempts observed
-- Suspicious IP: 192.168.1.10
-- Possible brute force attack detected
+- Suspicious IP address identified
+- Possible account compromise detected
 
-## Incident Response Steps
+## Response Actions
 
 ### 1. Identification
-- Logs were analyzed using SIEM tool
-- Suspicious activity was detected
+- Analyzed logs using SIEM tool
+- Confirmed brute force attack pattern
 
 ### 2. Containment
-- Block the suspicious IP address
-- Disable compromised user account
+- Blocked suspicious IP address
+- Disabled compromised user account
 
 ### 3. Eradication
-- Remove malicious access
 - Reset passwords for affected accounts
+- Removed unauthorized access
 
 ### 4. Recovery
-- Restore system to normal state
-- Monitor for further suspicious activity
+- Restored system functionality
+- Monitored for further suspicious activity
 
 ### 5. Lessons Learned
-- Implement strong password policy
+- Enforce strong password policies
 - Enable multi-factor authentication
 - Improve monitoring and alerting
 
+## Risk Level
+Critical
+
+## Impact
+- Unauthorized access to system
+- Potential data breach
+- Compromise of user accounts
+
 ## Conclusion
-Proper incident response helps minimize damage and ensures quick recovery from security incidents.
+Effective incident response minimizes damage and ensures faster recovery from security incidents.
